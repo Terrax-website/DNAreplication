@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNA Replication Clicker</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<h1 id="title" class="outfit"><strong>DNA Replication Clicker</strong></h1>
+<div id="game-canvas">
+    <div id="notification">
+        <h2 id="notification-title">Who wants to be a millidnaire?</h2>
+        <button id="start-game">Me!</button>
+    </div>
+    <div id="question-board">
+        <h4 class="outfit" id="question-price">For 50 DNA</h4>
+        <button id="quit-now" class="outfit">Quit Now</button>
+        <h2 class="outfit" id="question"><strong>What enzyme unzips DNA?</strong></h2>
+        <div id="answer-choices">
+            <div id="A1" class="outfit"></div>
+            <div id="A2" class="outfit"></div>
+            <div id="A3" class="outfit"></div>
+            <div id="A4" class="outfit"></div>
+        </div>
+        <h1 id="wrong" class="outfit"></h1>
+         <h1 id="right" class="outfit"></h1>
+    </div>
+    <img id="dna" src="images/dna.png">
+<h2 id="dna-amount-title" class="outfit">DNA replicated: <span id="dna-amount">0</span></h2>
+<div id="descriptor"></div>
+<div id="upgrades" class="outfit">
+    <div id="helicase">
+<img id="helicase-img" src="images/helicase.png">
+<h3 id="helicase-label">Helicase</h3>
+<h4 id="helicase-cost">Cost: 100 DNA</h4>
+    </div>
+    <div id="primase">
+<img id="primase-img" src="images/primase.png">
+<h3 id="primase-label">Primase</h3>
+<h4 id="primase-cost">Cost: 500 DNA</h4>
+    </div>
+    <div id="topoisomerase">
+<img id="topoisomerase-img" src="images/topoisomerase.png">
+<h3 id="topoisomerase-label">Topoisomerase</h3>
+<h4 id="topoisomerase-cost">Cost: 1500 DNA</h4>
+    </div>
+    <div id="SSBP">
+<img id="SSBP-img" src="images/SSBP.png">
+<h3 id="SSBP-label">SSBPs</h3>
+<h4 id="SSBP-cost">Cost: 5000 DNA</h4>
+    </div>
+</div>
+<h3 id="increase1">+1</h3>
+</div>  
+<button id="reset">Reset</button>  
+<button id="quick-hack">Hack</button>
+</body>
+    <script src="script.js"></script>
+</html>
