@@ -283,6 +283,7 @@ grid-template-columns: 1fr 2fr;
     margin-top: 10vw;
     margin-bottom: 0vw;
     display: block;
+    touch-action: manipulation;
 }
 #reset {
     display: none;
