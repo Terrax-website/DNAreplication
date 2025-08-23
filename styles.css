@@ -4,10 +4,22 @@
   font-weight: 300;
   font-style: normal;
 }
-html, body {
-  touch-action: manipulation;
-  -ms-touch-action: manipulation;
+html {
+    background: radial-gradient( lightgoldenrodyellow, lightgoldenrodyellow, green);
+    width: 100%;
+    height: 110%;
+    background-repeat: no-repeat;
 }
+html, body, * {
+  touch-action: manipulation;  /* Prevent double-tap zoom */
+  -ms-touch-action: manipulation; /* Older IE/Edge */
+  user-select: none;           /* Disable text selection */
+  -webkit-user-select: none;   /* Safari */
+  -ms-user-select: none;       /* Old IE/Edge */
+  -webkit-touch-callout: none; /* Disable long-press menu on iOS */
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on iOS */
+}
+
 #title {
     text-align: center;
     font-size: 8vw;
@@ -125,10 +137,7 @@ margin-bottom: 0vw;
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-}
-body {
-    display: flex;
-    flex-direction: column;
+    background: radial-gradient(rgb(255, 255, 255), rgb(150, 255, 255))
 }
 #descriptor {
     position: absolute;
@@ -300,7 +309,7 @@ grid-template-columns: 1fr 2fr;
 }
 @media (min-width: 390px) and (max-width: 767px) {
     #game-canvas {
-        height: 180vw;
+        height: 90vh;
     }
     #dna-amount-title {
         font-size: 7vw;
@@ -315,7 +324,7 @@ grid-template-columns: 1fr 2fr;
         font-size: 5vw;
     }
     #question-board {
-        height: 82.7vh;
+        height: 90vh;
     }
     /*
     #upgrades h3 {
@@ -348,7 +357,7 @@ grid-template-columns: 1fr 2fr;
 }
 */
     }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1123px) {
 #title {
     font-size: 5vw;
 }
@@ -421,7 +430,7 @@ z-index: 2;
 }
   
 }
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
     #wrong {
     font-size: 4vw;
     top: 35%;
@@ -514,9 +523,6 @@ align-items: center;
 }
 #upgrades h4 {
     font-size: 2.5vw;
-}
-#topoisomerase-label {
-    font-size: 2vw !important;
 }
 #descriptor {
     position: absolute;
