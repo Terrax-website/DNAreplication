@@ -4,6 +4,10 @@
   font-weight: 300;
   font-style: normal;
 }
+html, body {
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+}
 #title {
     text-align: center;
     font-size: 8vw;
