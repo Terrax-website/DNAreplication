@@ -470,6 +470,7 @@ let questionsList = {
     500001: [`A replacement of a DNA nucleotide that doesn't change the phenotype is called:`, "Silent Mutation", "Nonsense Mutation", "Missense Mutation", "Null Mutation"],
     500002: [`What part of the nucleus makes rRNA?`, "Nucleolus", "Nucleoid", "Nuclear Envelope", "Nuclear Fusion"],
      1000001: [`Which pyrimidine forms 3 hydrogen bonds?`, "Thymine", "Adenine", "Cytosine", "Guanine"],
+      1000002: [`Which enzyme replaces RNA primers?`, "DNA Polymerase I", "DNA Polymerase II", "DNA Polymerase III", "RNA Polymerase"],
 }
 let difficultyScale = [0, 50, 100, 500, 1000, 5000, 10000, 50000, 100000, 123456789]
     let availableQuestions;
@@ -483,7 +484,7 @@ setTimeout(() => {
 notification.animate([{transform: "scale(1)"}, {transform: "scale(0.1)"}], 500);
 setTimeout(() => {notification.style.display = "none";}, 500);
 }, 5000)
-}, Math.floor(Math.random() * 300000) + 50000)
+}, Math.floor(Math.random() * 20000) + 30000)
 
 function startAnimationFifty() {
     startAnimation(50);
