@@ -39,7 +39,7 @@
 #question-board {
     background-color: wheat;
     width: 80vw;
-    height: 84.5vh;
+    height: 100%;
     border-radius: 2vw;
     position: absolute;
     z-index: 4;
@@ -308,7 +308,7 @@ grid-template-columns: 1fr 2fr;
         font-size: 5vw;
     }
     #question-board {
-        height: 180vw;
+        height: 82.7vh;
     }
     /*
     #upgrades h3 {
