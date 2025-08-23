@@ -346,8 +346,72 @@ grid-template-columns: 1fr 2fr;
 }
 #game-canvas {
     width: 90vw;
-    height: 80vw;
 }
+  #game-canvas {
+        height: 85vh;
+    }
+    #dna-amount-title {
+        font-size: 7vw;
+    }
+    #upgrades {
+        height: 40vw;
+    }
+    #dna {
+        width: 50vw;
+           margin: 0;
+        margin-top: 3vw;
+    }
+        #dna-amount-title {
+            margin-top: 3vw;
+        font-size: 6vw;
+    }
+    #notification {
+          border-radius: 2vw;
+    top: 12%;
+    right: 7%;
+    font-size: 15px;
+    }
+    #notification button {
+        font-size: 20px;
+    }
+    #upgrades h3 {
+        font-size: 5vw;
+    }
+    #upgrades h4 {
+        font-size: 5vw;
+    }
+    #question-board {
+        width: 90vw;
+        height: 85vh;
+    }
+    #answer-choices {
+        width: 90vw;
+        height: 60vh;
+        bottom: 3vw;
+    }
+    #answer-choices div {
+        font-size: 4vw;
+    }
+    #descriptor {
+         position: absolute;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 2px;
+    font-size: 3.5vw;
+color: white;
+z-index: 2;
+    }
+        #wrong {
+    top: 35%;
+    left: 20%;
+    text-align: center;
+}
+#right {
+     top: 35%;
+    left: 20%;
+     text-align: center;
+
+}
+  
 }
 @media (min-width: 1024px) {
     #wrong {

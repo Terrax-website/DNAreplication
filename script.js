@@ -450,13 +450,19 @@ let questionsList = {
  501: ["What enzyme unzips DNA?", "Helicase", "Primase", "Topoisomerase", "DNA Polymerase"],
   502: ["Where does DNA replication take place in an eukaryote?", "Nucleus", "Cytoplasm", "Plasma Membrane", "Nucleoid"],
   503: ["Which is not a DNA nucleotide?", "Cytoplasm", "Thymine", "Adenine", "Guanine"],
+  504: ["Which is not a RNA nucleotide?", "Thymine", "Uracil", "Adenine", "Cytosine"],
+  505: ["Most DNA are ____, while most RNA are not.", "double-stranded", "single-stranded", "ribose-containing", "uracil-containing"],
   1001: ["Where does DNA replication take place in a prokaryote?", "Cytoplasm", "Nucleus", "Plasma Membrane", "Ribosomes"],
   1002: ["When does DNA replication occur?", "S phase", "G1 phase", "M phase", "Prophase"],
+    1003: ["When do chromosomes split apart?", "Anaphase", "Metaphase", "Telophase", "Cytokinesis"],
+     1004: ["Which word correctly describes the genotype Bb?", "Heterozygous", "Homozygous", "Dominant", "Recessive"],
     5001: ["Which enzyme prevents DNA supercoiling?", "Topoisomerase", "Primase", "DNA polymerase I", "Helicase"],
     5002: ["Which enzyme increases DNA supercoiling?", "Helicase", "Primase", "DNA polymerase I", "Topoisomerase"],
     5003: ["Which enzyme fills in the gaps between Okazaki Fragments?", "Ligase", "Topoisomerase", "RNA polymerase I", "Okazase"],
+    5004: ["The heterozygous genotype leads to a BLEND of the two phenotypes in:", "Incomplete Dominance", "Codominance", "Classical Dominance", "Mendelian Dominance"],
     10001: ["The leading strand goes from 3' -> 5'. What are the primes counting?", "Deoxyribose carbons", "Deoxyribose oxygens", "Phosphate oxygens", "Nucleotide arrangement"],
     10002: ["When 2 nucleotides are joined, what process is used?", "Dehydration synthesis", "Hydration synthesis", "Hydrolysis", "Hydroligation"],
+     10003: ["What is the \"box\" that acts as the eukaryotic promoter region for RNA polymerase made of?", "Adenine & Thymine", "Cytosine & Guanine", "Thymine & Guanine", "Adenine & Cytosine"],
     50001: [`The template DNA has sequence "AGT" turns into which mRNA codon?`, "UCA", "TCA", "TCU", "AGU"],
     50002: [`When sister chromatids don't separate in anaphase, this is:`, "Nondisjunction", "Synapsis", "Independent Assortment", "Hydrolysis"],
     100001: ["Eukaryotic post-transcriptional RNA modification adds ___ on the 3' end of RNA.", "Polyadenine tail", "Polyguanine tail", "Methylguanosine cap", "Exon"],
@@ -477,7 +483,7 @@ setTimeout(() => {
 notification.animate([{transform: "scale(1)"}, {transform: "scale(0.1)"}], 500);
 setTimeout(() => {notification.style.display = "none";}, 500);
 }, 5000)
-}, Math.floor(Math.random() * 5000) + 5000)
+}, Math.floor(Math.random() * 300000) + 50000)
 
 function startAnimationFifty() {
     startAnimation(50);
@@ -563,7 +569,7 @@ setTimeout(() => {
 notification.animate([{transform: "scale(1)"}, {transform: "scale(0.1)"}], 500);
 setTimeout(() => {notification.style.display = "none";}, 499);
 }, 5000)
-}, Math.floor(Math.random() * 5000) + 5000)
+}, Math.floor(Math.random() * 300000) + 50000)
     }, 3000)
   } else if (event.target.textContent == availableQuestions[randomNum][1]) {
 let difficultyIndex = difficultyScale.indexOf(difficulty);
@@ -599,7 +605,7 @@ setTimeout(() => {
 notification.animate([{transform: "scale(1)"}, {transform: "scale(0.1)"}], 500);
 setTimeout(() => {notification.style.display = "none";}, 499);
 }, 5000)
-}, Math.floor(Math.random() * 5000) + 5000)
+}, Math.floor(Math.random() * 300000) + 50000)
     }, 3000)
 } else {
 startAnimation(difficultyScale[difficultyIndex + 1]);
@@ -631,7 +637,7 @@ setTimeout(() => {
 notification.animate([{transform: "scale(1)"}, {transform: "scale(0.1)"}], 500);
 setTimeout(() => {notification.style.display = "none";}, 499);
 }, 5000)
-}, Math.floor(Math.random() * 5000) + 5000)
+}, Math.floor(Math.random() * 300000) + 5000)
     }, 3000)
   }
 }
