@@ -158,7 +158,10 @@ localStorage.setItem("amount", Number(dnaAmount));
     dnaAnimate();
     dnaCheck();
 }
-dna.addEventListener("touchstart", dnaClicked);
+dna.addEventListener("touchstart", () => {
+    e.preventDefault()
+    dnaClicked}
+);
 
 function dnaAnimate() {
     dna.animate([{transform: "scale(1.0)"}, {transform: "scale(1.2)"}, {transform: "scale(1.0)"}], {duration: 300});
