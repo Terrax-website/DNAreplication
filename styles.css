@@ -4,12 +4,6 @@
   font-weight: 300;
   font-style: normal;
 }
-html {
-    background: radial-gradient( lightgoldenrodyellow, lightgoldenrodyellow, green);
-    width: 100%;
-    height: 110%;
-    background-repeat: no-repeat;
-}
 html, body, * {
   touch-action: manipulation;  /* Prevent double-tap zoom */
   -ms-touch-action: manipulation; /* Older IE/Edge */
@@ -18,6 +12,14 @@ html, body, * {
   -ms-user-select: none;       /* Old IE/Edge */
   -webkit-touch-callout: none; /* Disable long-press menu on iOS */
   -webkit-tap-highlight-color: transparent; /* Remove tap highlight on iOS */
+}
+body {
+    position: relative;
+     background: radial-gradient( lightgoldenrodyellow, lightgoldenrodyellow, green);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #title {
@@ -293,6 +295,7 @@ grid-template-columns: 1fr 2fr;
 #dna {
     position: relative;
     width: 70vw;
+    max-width: 350px;
     margin-top: 10vw;
     margin-bottom: 0vw;
     display: block;
@@ -377,6 +380,7 @@ grid-template-columns: 1fr 2fr;
         width: 50vw;
            margin: 0;
         margin-top: 3vw;
+        max-width: 350px;
     }
         #dna-amount-title {
             margin-top: 3vw;
@@ -392,10 +396,10 @@ grid-template-columns: 1fr 2fr;
         font-size: 20px;
     }
     #upgrades h3 {
-        font-size: 5vw;
+        font-size: clamp(3px, 5vw, 30px);
     }
     #upgrades h4 {
-        font-size: 5vw;
+        font-size: clamp(3px, 5vw, 30px);
     }
     #question-board {
         width: 90vw;
@@ -485,20 +489,22 @@ right: 5vw;
 #game-canvas {
     width: 90vw;
     height: 50vw;
+    position: relative;
     flex-direction: row-reverse;
-
+max-height: 700px;
 }
 #dna {
     width: 30vw;
     margin-top: 0vw;
-    margin-right: 14vw;
+    margin-right: 15vw;
+    max-width: 400px;
 }
 #dna-amount-title {
     margin-top: 0vw;
-    font-size: 4vw;
+    font-size: clamp(3px, 4vw, 50px);
 position: absolute;
-top: 50vw;
-left: 46vw;
+top: 85%;
+left: 53%;
 }
 #upgrades {
     background: linear-gradient(180deg, rgb(255, 100, 100), rgb(125, 255, 100));
