@@ -11,13 +11,6 @@ let gameCanvas = document.getElementById("game-canvas");
 let ping = new Audio("sounds/ping-82822.mp3");
 let click = new Audio("sounds/mouse-click-290204.mp3");
 let descriptor = document.getElementById("descriptor");
-const buttons = document.querySelectorAll('img');
-buttons.forEach(btn => {
-  btn.addEventListener('touchstart', e => {
-    btn.style.pointerEvents = 'none';
-    setTimeout(() => btn.style.pointerEvents = 'auto', 50);
-  });
-});
 let helicaseObj = {
 helicaseBool: localStorage.getItem("helicase") ? true : false,
 helicaseContainer: document.getElementById("helicase"),
