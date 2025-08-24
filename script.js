@@ -159,7 +159,7 @@ localStorage.setItem("amount", Number(dnaAmount));
     dnaCheck();
 }
 if ("ontouchstart" in window) {
-    dna.addEventListener("touchend", e => {
+    dna.addEventListener("touchstart", e => {
 e.preventDefault();
 dnaClicked();
 }) } else {
