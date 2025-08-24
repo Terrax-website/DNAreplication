@@ -5,8 +5,8 @@
   font-style: normal;
 }
 html, body, * {
-  touch-action: none;  /* Prevent double-tap zoom */
-  -ms-touch-action: none; /* Older IE/Edge */
+  touch-action: manipulation;  /* Prevent double-tap zoom */
+  -ms-touch-action: manipulation; /* Older IE/Edge */
   user-select: none;           /* Disable text selection */
   -webkit-user-select: none;   /* Safari */
   -ms-user-select: none;       /* Old IE/Edge */
