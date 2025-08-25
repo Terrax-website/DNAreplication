@@ -149,8 +149,8 @@ helicaseObj.SSBPContainer.addEventListener("mouseleave", hideDescriptor)
 
 function dnaClicked() {
     let click = new Audio("sounds/mouse-click-290204.mp3");
-    audio.volume = 0.05;
-    audio.play();
+    click.volume = 0.05;
+    click.play();
     dnaAmount += extraClicks;
     console.log("Saving DNA: " + Number(dnaAmount));
 localStorage.setItem("amount", Number(dnaAmount));
