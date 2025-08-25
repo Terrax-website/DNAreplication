@@ -9,7 +9,6 @@ let primasePrice = 500;
 let increaseOne = document.getElementById("increase1");
 let gameCanvas = document.getElementById("game-canvas");
 let ping = new Audio("sounds/ping-82822.mp3");
-let click = new Audio("sounds/mouse-click-290204.mp3");
 let descriptor = document.getElementById("descriptor");
 let helicaseObj = {
 helicaseBool: localStorage.getItem("helicase") ? true : false,
@@ -149,6 +148,7 @@ if (descStateObj.SSBP === "hidden") {
 helicaseObj.SSBPContainer.addEventListener("mouseleave", hideDescriptor)
 
 function dnaClicked() {
+    let click = new Audio("sounds/mouse-click-290204.mp3");
     audio.volume = 0.05;
     audio.play();
     dnaAmount += extraClicks;
