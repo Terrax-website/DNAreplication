@@ -148,9 +148,6 @@ if (descStateObj.SSBP === "hidden") {
 helicaseObj.SSBPContainer.addEventListener("mouseleave", hideDescriptor)
 
 function dnaClicked() {
-    let click = new Audio("sounds/mouse-click-290204.mp3");
-    click.volume = 0.05;
-    click.play();
     dnaAmount += extraClicks;
     console.log("Saving DNA: " + Number(dnaAmount));
 localStorage.setItem("amount", Number(dnaAmount));
@@ -163,7 +160,12 @@ if ("ontouchstart" in window) {
 e.preventDefault();
 dnaClicked();
 }) } else {
-dna.addEventListener("click", dnaClicked);
+dna.addEventListener("click", () => {
+    dnaClicked();
+    let click = new Audio("sounds/mouse-click-290204.mp3");
+    click.volume = 0.05;
+    click.play();
+});
 };
 
 function dnaAnimate() {
