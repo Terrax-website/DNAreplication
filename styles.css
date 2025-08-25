@@ -24,7 +24,7 @@ body {
 
 #title {
     text-align: center;
-    font-size: 8vw;
+    font-size: clamp(0px, 8vw, 5vh);
     width: 100%;
 }
 #wrong {
@@ -124,13 +124,13 @@ font-size: 10px;
     margin-bottom: 5px;
 }
 #dna-amount-title {
-    margin-top: 10vw;
-margin-bottom: 0vw;
+    margin-top: 6vh;
+margin-bottom: 2vh;
  position: relative;
 }
 #game-canvas {
     width: 80vw;
-    height: 150vw;
+    height: 85vh;
     border: 3px solid black;
     border-radius: 3vw;
     margin: 0 auto;
@@ -294,10 +294,10 @@ grid-template-columns: 1fr 2fr;
 }
 #dna {
     position: relative;
-    width: 70vw;
-    max-width: 350px;
-    margin-top: 10vw;
-    margin-bottom: 0vw;
+height: 40vh;
+width: auto;
+    margin-top: 3vh;
+    margin-bottom: 0;
     display: block;
     touch-action: manipulation;
     user-select: none;
@@ -312,19 +312,25 @@ grid-template-columns: 1fr 2fr;
 }
 @media (min-width: 390px) and (max-width: 767px) {
     #game-canvas {
-        height: 90vh;
+        height: 85vh;
     }
     #dna-amount-title {
-        font-size: 7vw;
+margin-top: 0;
     }
     #upgrades {
         height: 60vw;
     }
     #upgrades h3 {
-        font-size: 5vw;
+        font-size: clamp(0px, 5vw, 25px);
+    }
+    #topoisomerase img {
+max-width: 55px;
+    }
+    #primase img {
+        max-width: 55px;
     }
     #upgrades h4 {
-        font-size: 5vw;
+        font-size: clamp(0px, 5vw, 25px);
     }
     #question-board {
         height: 90vh;
@@ -360,26 +366,31 @@ grid-template-columns: 1fr 2fr;
 }
 */
     }
-@media (min-width: 768px) and (max-width: 1123px) {
-#title {
-    font-size: 5vw;
-}
+@media (min-width: 768px) and (max-width: 1073px) {
+ #topoisomerase img {
+max-width: 65px;
+    }
+    #helicase img {
+        max-width: 100px;
+    }
+    #primase img {
+max-width: 65px;
+    }
 #game-canvas {
     width: 90vw;
-}
-  #game-canvas {
-        height: 85vh;
+    height: 85vh;
     }
     #dna-amount-title {
-        font-size: 7vw;
+        font-size: 6vh !important;
+        margin-top: 0 !important;
     }
     #upgrades {
         height: 40vw;
     }
     #dna {
-        width: 50vw;
+        width: 50vh;
            margin: 0;
-        margin-top: 3vw;
+        margin-top: 0;
         max-width: 350px;
     }
         #dna-amount-title {
@@ -396,10 +407,10 @@ grid-template-columns: 1fr 2fr;
         font-size: 20px;
     }
     #upgrades h3 {
-        font-size: clamp(3px, 5vw, 30px);
+        font-size: clamp(3px, 5vw, 25px);
     }
     #upgrades h4 {
-        font-size: clamp(3px, 5vw, 30px);
+        font-size: clamp(3px, 5vw, 25px);
     }
     #question-board {
         width: 90vw;
@@ -434,7 +445,7 @@ z-index: 2;
 }
   
 }
-@media (min-width: 1124px) {
+@media (min-width: 1074px) {
     #wrong {
     font-size: 4vw;
     top: 35%;
@@ -494,10 +505,10 @@ right: 5vw;
 max-height: 700px;
 }
 #dna {
-    width: 30vw;
+    height: 50vh;
     margin-top: 0vw;
     margin-right: 15vw;
-    max-width: 400px;
+    max-height: 300px;
 }
 #dna-amount-title {
     margin-top: 0vw;
